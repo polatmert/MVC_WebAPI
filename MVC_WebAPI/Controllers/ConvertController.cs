@@ -11,19 +11,19 @@ namespace MVC_WebAPI.Controllers
 {
     public class ConvertController : ApiController
     {
-        // GET api/values
+        // GET api/convert
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
         }
 
-        // GET api/values/5
+        // GET api/convert/5
         public string Get(int id)
         {
             return "value";
         }
 
-        // POST api/values
+        // POST api/convert
         public String Post([FromBody] TextInput textInput)
         {
             string input = textInput.UserText;
